@@ -6,9 +6,9 @@
     justify-content: space-between;
 }
 
-.tw-followCard + .tw-followCard {
+/* .tw-followCard + .tw-followCard {
     margin-top: 24px;
-}
+} */
 
 .tw-followCard-header{
     display: flex;
