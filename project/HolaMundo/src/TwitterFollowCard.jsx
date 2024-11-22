@@ -1,16 +1,16 @@
 import './App.css';
 
-export function TwitterFollowCard(){
+export function TwitterFollowCard({userName, name, isFollowing}) {
     return (
         <article className='tw-followCard'>
             <header className='tw-followCard-header'>
                 <img 
                     className='tw-followCard-avatar'
-                    src="https://portfolio-tordinibautista.netlify.app/assets/img/img-portfolio.png" 
+                    src={`https://unavatar.io/${userName}`}
                     alt="PorfileTwitterCard" />
                 <div className='tw-followCard-info'>
-                    <strong>Juan Bautista Tordini</strong>
-                    <span className='tw-followCard-infoUserName'>@BautistaTordini</span>
+                    <strong>{name}</strong>
+                    <span className='tw-followCard-infoUserName'>@{userName}</span>
                 </div>
             </header>
 
